@@ -1,0 +1,38 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select
+      panelClass="sort-select"
+      [(ngModel)]="sort"
+      name="sort"
+    >
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Release Date</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Updated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="games">
+  <div class="game">
+    <div class="game-thumb-container">
+      <img src="https://image.shutterstock.com/image-vector/vector-illustration-neon-future-game-260nw-1861318969.jpg"
+           alt="thumbnail"
+           class="game-thumbnail"
+      >
+    </div>
+    <div class="game-description">
+      <p class="game-name">Name</p>
+      <div class="game-platforms">
+        <img class="game-platform"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/1200px-Playstation_logo_colour.svg.png"
+             alt="slug"
+        >
+      </div>
+    </div>
+  </div>
+</div>
